@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+</head>
+<body>
+    <input type="text" id="text-el">
+    <button onclick="values();">Submit</button>
+    <script>
+        const array = [4, 3, 65, 2, 89, 0, 34, 93];
+        // //TRAVERSING
+        // for(let i = 0; i < array.length; i++) {
+        //     document.write(`${array[i]} <br>`);
+        // }
+        // //ACCESSING
+        // document.write(`i accessed 8th item in the array ${array[7]}`);
+        //ACCESS EL WITH TEXT INPUT AND BTN
+        function values(){
+            const textEl = document.getElementById('text-el').value; 
+            alert(array[textEl]);
+        }
+    </script>
+</body>
+</html>
