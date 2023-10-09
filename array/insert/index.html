@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Insert</title>
+</head>
+<body>
+    <script>
+        //INSERT
+    let arr = [3, 4, 7, 1, 9];
+    let index = 1;
+    let value = 20;
+    console.warn(arr);
+    for(let i = arr.length-1; i>= 0 ; i --) { // get the index of the array in an reverse order eg: [9, 1, 7, 4, 3]
+        if(index >= i){
+            arr[i + 1] = arr[i]; //replace last data to 5th index and so on until the index = 1 reaches
+        }
+        if(index === i){
+            arr[i] = value; 
+            console.warn(arr);
+        }
+    }
+    </script>
+</body>
+</html>
