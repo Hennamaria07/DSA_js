@@ -17,9 +17,18 @@
         // //ACCESSING
         // document.write(`i accessed 8th item in the array ${array[7]}`);
         //ACCESS EL WITH TEXT INPUT AND BTN
-        function values(){
+        // function values(){
+        //     const textEl = document.getElementById('text-el').value; 
+        //     alert(array[textEl]);
+        // }
+        //VALIDATION
+        function values() {
             const textEl = document.getElementById('text-el').value; 
-            alert(array[textEl]);
+            if(textEl < array.length && typeof parseInt(textEl) === "number") {
+                alert(array[textEl]);
+            } else {
+                alert('please enter a valid number');
+            }
         }
     </script>
 </body>
